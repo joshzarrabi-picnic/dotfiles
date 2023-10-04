@@ -14,7 +14,6 @@ Plug 'tpope/vim-commentary'   " Make commenting easier
 Plug 'tpope/vim-vinegar'      " Make netrw way better
 Plug 'mileszs/ack.vim'        " search
 Plug 'ctrlpvim/ctrlp.vim'     " Fuzzy finder
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " autocomplete
 call plug#end()
 
 
