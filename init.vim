@@ -7,7 +7,6 @@ Plug 'cespare/vim-toml'
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'tpope/vim-fugitive'     " Git Commands
-Plug 'fatih/vim-go'           " Lets do go development
 Plug 'benekastah/neomake'     " Nevoim specific plugins
 Plug 'tpope/vim-unimpaired'   " Pairs of handy bracket mappings
 Plug 'tpope/vim-commentary'   " Make commenting easier
@@ -53,27 +52,6 @@ set list
 " Auto update commands run not too fast and not too slow
 set updatetime=500
 
-" Go Declaration
-let g:go_fmt_command = "goimports"
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_interfaces = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_auto_type_info = 1
-
-" Turn on go-implements
-au FileType go nmap <Leader>i <Plug>(go-implements)
-
-" Open test file in new window
-au FileType go nmap <Leader>a <Plug>(go-alternate-vertical)
-
-" Open godoc in a vertical split
-au FileType go nmap <Leader>d <Plug>(go-doc-vertical)
-
 " Unbreak YAML indents
 autocmd FileType yaml setlocal indentexpr=
 
@@ -93,18 +71,6 @@ autocmd! BufWritePost * Neomake " Run neomake, it's like syntastic
 "endfunction
 "inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 "inoremap <s-tab> <c-n>
-
-" Enable autocompletion
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('auto_complete', v:false)
-inoremap <silent><expr> <TAB>
-		\ pumvisible() ? "\<C-n>" :
-		\ <SID>check_back_space() ? "\<TAB>" :
-		\ deoplete#manual_complete()
-function! s:check_back_space() abort "{{{
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction"}}}
 
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 

@@ -17,7 +17,7 @@ function main() {
 	fi
 
 
-  install:neovim
+  install::neovim
 
 	echo "Success!"
 }
@@ -29,7 +29,6 @@ function install::neovim() {
 	mkdir -p "${HOME}/.config/nvim"
 	ln -sf "${PROGDIR}/init.vim" "${HOME}/.config/nvim/init.vim"
 	nvim -c "PlugInstall" -c "PlugUpdate" -c "qall" --headless
-	nvim -c "GoInstallBinaries" -c "GoUpdateBinaries" -c "qall!" --headless
 }
 
 main
