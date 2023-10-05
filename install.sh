@@ -7,7 +7,6 @@ readonly GOPATH="${HOME}/go"
 
 function main() {
 	ln -sf "${PROGDIR}/.bash_profile" "${HOME}/.bash_profile"
-	ln -sf "${PROGDIR}/.gitconfig" "${HOME}/.gitconfig"
 	ln -sf "${PROGDIR}/.inputrc" "${HOME}/.inputrc"
 	ln -sf "${PROGDIR}/.tmux.conf" "${HOME}/.tmux.conf"
 	mkdir -pv "${WORKSPACE}"
