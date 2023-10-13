@@ -12,7 +12,8 @@ Plug 'tpope/vim-unimpaired'   " Pairs of handy bracket mappings
 Plug 'tpope/vim-commentary'   " Make commenting easier
 Plug 'tpope/vim-vinegar'      " Make netrw way better
 Plug 'mileszs/ack.vim'        " search
-Plug 'ctrlpvim/ctrlp.vim'     " Fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
