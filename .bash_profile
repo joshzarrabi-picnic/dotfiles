@@ -3,6 +3,7 @@
 function main() {
   function setup_aliases() {
     alias ls="ls --color"
+    alias sl="ls --color"
     alias vim="nvim"
     alias vi="nvim"
     alias ll="ls -al"
