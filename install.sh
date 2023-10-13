@@ -11,8 +11,6 @@ function main() {
 	ln -sf "${PROGDIR}/.tmux.conf" "${HOME}/.tmux.conf"
 	mkdir -pv "${WORKSPACE}"
 
-  apt-get install silversearcher-ag
-
 	if [[ ! -d "${HOME}/.config/colorschemes" ]]; then
 		git clone https://github.com/chriskempson/base16-shell.git "${HOME}/.config/colorschemes"
 	fi
@@ -22,7 +20,6 @@ function main() {
 
 	echo "Success!"
 }
-
 
 function install::neovim() {
 	echo "* Installing neovim"
