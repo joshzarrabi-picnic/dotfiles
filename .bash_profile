@@ -8,6 +8,7 @@ function main() {
     alias vi="nvim"
     alias ll="ls -al"
     alias gst="git status"
+    alias k="kubectl"
   }
 
   function setup_environment() {
