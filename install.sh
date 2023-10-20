@@ -17,6 +17,7 @@ function main() {
 
 
   install::neovim
+  brew install the_silver_searcher
 
 	echo "Success!"
 }
