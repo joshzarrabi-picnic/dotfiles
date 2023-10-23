@@ -18,6 +18,7 @@ function main() {
 
   install::neovim
   brew install the_silver_searcher
+  brew install tig
 
 	echo "Success!"
 }
