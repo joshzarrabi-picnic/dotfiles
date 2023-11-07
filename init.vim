@@ -14,6 +14,7 @@ Plug 'tpope/vim-vinegar'      " Make netrw way better
 Plug 'mileszs/ack.vim'        " search
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 
