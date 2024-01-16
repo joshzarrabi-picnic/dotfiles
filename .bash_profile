@@ -20,10 +20,6 @@ function main() {
     # go environment
     export GOPATH="${HOME}/go"
 
-    # setup path
-    export PATH="${GOPATH}/bin:${PATH}"
-    export PATH="/usr/local/go/bin:${PATH}"
-
     export EDITOR="nvim"
 
     function _bgjobs() {
