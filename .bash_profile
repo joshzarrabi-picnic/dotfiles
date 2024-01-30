@@ -15,8 +15,6 @@ function main() {
     export CLICOLOR=1
     export LSCOLORS exfxcxdxbxegedabagacad
 
-    export LC_ALL=en_US.UTF-8
-
     # go environment
     export GOPATH="${HOME}/go"
 
