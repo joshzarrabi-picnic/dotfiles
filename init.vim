@@ -33,6 +33,8 @@ nnoremap <leader>y "*y
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
+nnoremap :F :Files<CR>
+
 " Maintain undo history between sessions
 set undofile
 set undodir=~/.config/nvim/undodir
