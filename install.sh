@@ -2,14 +2,13 @@
 set -eu
 
 readonly PROGDIR="$(cd "$(dirname "${0}")" && pwd)"
-readonly WORKSPACE="${HOME}/workspace"
 readonly GOPATH="${HOME}/go"
 
 function main() {
 	ln -sf "${PROGDIR}/.bash_profile" "${HOME}/.bash_profile"
 	ln -sf "${PROGDIR}/.inputrc" "${HOME}/.inputrc"
 	ln -sf "${PROGDIR}/.tmux.conf" "${HOME}/.tmux.conf"
-	mkdir -pv "${WORKSPACE}"
+	ln -sf "${PROGDIR}/.gitconfig" "${HOME}/.gitconfig"
 
 	if [[ ! -d "${HOME}/.config/colorschemes" ]]; then
 		git clone https://github.com/chriskempson/base16-shell.git "${HOME}/.config/colorschemes"
