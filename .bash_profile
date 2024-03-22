@@ -8,6 +8,7 @@ function main() {
     alias vi="nvim"
     alias ll="ls -al"
     alias gst="git status"
+    alias gap="git add -p"
     alias k="kubectl"
   }
 
