@@ -79,7 +79,7 @@ function main() {
       local gitstatus
       gitstatus="$(_gitstatus)"
 
-      PS1="${lightblue}\\d${reset} \\t ${lightred}\$(_bgjobs)${reset}${lightgreen}\\w${reset} ${lightblue}${CODER_WORKSPACE_NAME}${reset} ${gitstatus}${status}\n ‣ "
+      PS1="${lightblue}\\d${reset} \\t ${lightred}\$(_bgjobs)${reset}${lightblue}[${CODER_WORKSPACE_NAME}]${reset} ${lightgreen}\\w${reset} ${gitstatus}${status}\n ‣ "
     }
 
     if [[ "${PROMPT_COMMAND}" != *"_prompt"* ]]; then
