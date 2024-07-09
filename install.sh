@@ -19,6 +19,7 @@ function main() {
   brew install the_silver_searcher
   brew install tig
   brew install glow
+  brew install ripgrep
 
 	echo "Success!"
 }
